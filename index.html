@@ -4,496 +4,327 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>福島ブルーベリーファーム | 埼玉県嵐山町</title>
-  <meta name="description" content="埼玉県嵐山町の福島ブルーベリーファーム。無農薬のブルーベリーは30種類以上。2026年の狩りは終了。秋は栗といちじく。">
-  <meta name="theme-color" content="#3d2463">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="埼玉県嵐山町の福島ブルーベリーファーム。30種類以上のブルーベリーから推しを見つけてください。2026年の狩りは終了。いまは栗を出荷中。">
+  <meta name="theme-color" content="#0A3556">
+  <!-- ロゴの差し替え: assets/logo.svg を本番データに置き換える -->
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
-<body>
+<body data-season="autumn">
   <a class="skip-link" href="#main">本文へスキップ</a>
-  <div class="palette-bar" aria-hidden="true"></div>
-  <p class="proto-note">仮の配色です。<span class="mark mark-prep">※準備中</span>は未掲載、<span class="mark mark-check">【要確認】</span>は未確定です。</p>
 
-  <header class="site-header">
-    <div class="header-inner wrap">
-      <a class="logo" href="#top">
-        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
-          <circle cx="24" cy="28" r="12" fill="var(--color-blueberry)"/>
-          <circle cx="19" cy="23" r="2.2" fill="#fff" opacity=".5"/>
-          <path d="M24 14c1.2 2.4 2.4 3.6 2.4 3.6" fill="none" stroke="var(--color-leaf)" stroke-width="2" stroke-linecap="round"/>
-          <ellipse cx="30" cy="13" rx="5" ry="2.4" transform="rotate(-30 30 13)" fill="var(--color-leaf)"/>
-        </svg>
-        <span>
-          <span class="logo-name">福島ブルーベリーファーム</span>
-          <span class="logo-place">埼玉県嵐山町</span>
+  <header class="hdr">
+    <div class="hdr-bar">
+      <a class="lockup" href="#top">
+        <img class="badge" src="assets/logo.svg" alt="福島ブルーベリーファーム" width="64" height="64">
+        <span class="lk-text">
+          <span class="lk-sub">埼玉嵐山
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <g transform="translate(26 12) rotate(-40)">
+                <path d="M0 0 C 4.8 -5.12, 12.0 -4.8, 16 0 C 12.0 4.8, 4.8 5.12, 0 0Z" fill="#6FA33A"/>
+              </g>
+              <circle cx="18" cy="30" r="11" fill="#4A2D7A"/>
+              <circle cx="31" cy="32" r="9" fill="#4A2D7A"/>
+              <ellipse cx="14.2" cy="25.8" rx="3.1" ry="2" fill="#fff" opacity=".28"/>
+            </svg>
+          </span>
+          <span class="lk-main">福島ブルーベリーファーム</span>
+          <span class="lk-en" lang="en">Blueberry Farm Fukushima</span>
         </span>
       </a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <button type="button" class="menu" aria-expanded="false" aria-controls="site-nav">
         <span class="sr-only">メニュー</span>
-        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
       </button>
-      <nav id="site-nav" class="site-nav" aria-label="ページ内">
-        <ul>
-          <li><a href="#about">園のこと</a></li>
-          <li><a href="#varieties">品種</a></li>
-          <li><a href="#calendar">季節</a></li>
-          <li><a href="#picking">狩り</a></li>
-          <li><a href="#buy">販売先</a></li>
-          <li><a href="#news">お知らせ</a></li>
-          <li><a href="#access">アクセス</a></li>
-          <li><a href="#contact">連絡</a></li>
-        </ul>
+      <nav id="site-nav" class="dnav" aria-label="ページ内">
+        <a href="#seasons">季節の果実</a>
+        <a href="#oshi">推しブルーベリー</a>
+        <a href="#log">出荷ログ</a>
+        <a href="#song">テーマソング</a>
+        <a href="#shop">販売場所</a>
+        <a class="dline" href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer">LINEで問い合わせる<span class="sr-only">（新しいタブで開きます）</span></a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="wrap">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">埼玉県嵐山町</p>
-            <h1 id="hero-title">あなたの推しを、<br>この丘で。</h1>
-            <p class="hero-lead">福島ブルーベリーファームは、嵐山町でブルーベリーを無農薬で育てています。30種類以上あります。</p>
-            <ul class="chips">
-              <li class="chip-ended">2026年のブルーベリー狩りは終了</li>
-              <li class="chip-now">秋は栗といちじく</li>
-            </ul>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer">LINEで近況を見る<span class="sr-only">（新しいタブで開きます）</span></a>
-              <a class="btn btn-ghost" href="#calendar">秋の果実を見る</a>
-            </div>
-          </div>
-          <figure class="hero-frame">
-            <svg class="hero-art" viewBox="0 0 640 540" role="img" aria-labelledby="heroArtTitle">
-              <title id="heroArtTitle">丘の上のブルーベリー、栗、いちじくのイラスト</title>
-              <rect width="640" height="540" rx="28" fill="var(--color-blueberry-soft)"/>
-              <circle cx="528" cy="92" r="40" fill="var(--color-warm)"/>
-              <circle cx="514" cy="78" r="10" fill="#fff" opacity=".45"/>
-              <path d="M0 268c80-62 170-18 250-62 96-52 150-8 246-46 58-22 110 6 144 22v358H0Z" fill="var(--color-leaf-soft)"/>
-              <path d="M0 352c100-48 170-8 260-34 112-32 168 16 268-18 48-16 80 6 112 14v226H0Z" fill="var(--color-leaf-mid)"/>
-              <path d="M0 448c90-30 160-4 250-22 100-20 160 14 250-4 46-8 90 4 140 12v106H0Z" fill="var(--color-leaf)"/>
-              <ellipse cx="188" cy="318" rx="54" ry="30" fill="var(--color-leaf)"/>
-              <ellipse cx="250" cy="300" rx="72" ry="38" fill="var(--color-leaf-deep)"/>
-              <ellipse cx="312" cy="322" rx="50" ry="28" fill="var(--color-leaf)"/>
-              <g>
-                <circle cx="214" cy="286" r="20" fill="var(--color-blueberry)"/>
-                <circle cx="248" cy="270" r="24" fill="var(--color-blueberry)"/>
-                <circle cx="282" cy="292" r="18" fill="var(--color-blueberry-bright)"/>
-                <circle cx="230" cy="312" r="22" fill="var(--color-blueberry)"/>
-                <circle cx="268" cy="318" r="16" fill="var(--color-blueberry-bright)"/>
-                <circle cx="236" cy="258" r="5" fill="#fff" opacity=".4"/>
-                <circle cx="206" cy="276" r="4" fill="#fff" opacity=".35"/>
-                <path d="M248 242c2 4 4 6 4 6" fill="none" stroke="var(--color-leaf-deep)" stroke-width="3" stroke-linecap="round"/>
-                <ellipse cx="268" cy="236" rx="12" ry="6" transform="rotate(-28 268 236)" fill="var(--color-leaf)"/>
-              </g>
-              <g transform="translate(430 214)">
-                <path d="M48 8c22 8 40 36 36 72-4 36-22 58-36 66-14-8-32-30-36-66C8 44 26 16 48 8Z" fill="var(--color-chestnut-bright)"/>
-                <path d="M48 28c8 10 14 28 12 48" fill="none" stroke="var(--color-chestnut-deep)" stroke-width="2" opacity=".45" stroke-linecap="round"/>
-                <path d="M48 8c6-10 16-16 22-14 4 8-2 16-8 18" fill="var(--color-leaf)"/>
-                <ellipse cx="62" cy="2" rx="10" ry="5" transform="rotate(20 62 2)" fill="var(--color-leaf-deep)"/>
-              </g>
-              <g transform="translate(392 340)">
-                <g fill="var(--color-chestnut)">
-                  <path d="M54 8l8 16-8 4-8-4z"/>
-                  <path d="M86 28l14 12-10 6-8-8z"/>
-                  <path d="M96 58l6 16-10 2-4-12z"/>
-                  <path d="M78 84l-2 16-8-6 2-12z"/>
-                  <path d="M48 92l-10 12-6-8 8-10z"/>
-                  <path d="M22 80l-14 8 2-10 10-4z"/>
-                  <path d="M10 54l-12 4 6-10 8 2z"/>
-                  <path d="M16 28l-8-10 10 2 4 8z"/>
-                </g>
-                <ellipse cx="54" cy="52" rx="26" ry="24" fill="var(--color-chestnut-bright)"/>
-                <path d="M40 40c8 6 16 8 26 4" fill="none" stroke="var(--color-chestnut-soft)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
-              </g>
+      <div class="hero-img">
+        <!-- 写真に差し替えるときは assets/hero.svg を撮影データに置き換える -->
+        <img src="assets/hero.svg" alt="" width="1440" height="900">
+        <span class="plabel">写真イメージ｜朝の光のブルーベリーの房（要撮影）</span>
+      </div>
+      <div class="hero-card">
+        <p class="kicker"><span aria-hidden="true">🫐 </span><span lang="en">30+ varieties</span>・無農薬</p>
+        <h1 id="hero-title"><span class="nw">30種類以上の</span><span class="nw">ブルーベリーから</span><span class="nw">推しを見つけてください</span></h1>
+        <p class="status"><span class="dot" aria-hidden="true"></span>いま <b>栗</b> を出荷中</p>
+        <p class="ended">2026年のブルーベリー狩りは終了しました。ご来園ありがとうございました。</p>
+        <div class="btns">
+          <a class="btn primary" href="#oshi">推しブルーベリーを探す</a>
+          <a class="btn line" href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3V21l3.6-2.4c.8.2 1.6.3 2.4.3 5.5 0 10-3.6 10-8S17.5 3 12 3Z" fill="none" stroke="#0A3556" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="8" cy="11" r="1.2" fill="#0A3556"/>
+              <circle cx="12" cy="11" r="1.2" fill="#0A3556"/>
+              <circle cx="16" cy="11" r="1.2" fill="#0A3556"/>
             </svg>
-            <figcaption class="hero-caption">イラストです。農園の写真は <span class="mark mark-prep">※準備中</span></figcaption>
-          </figure>
+            LINEで問い合わせる
+            <span class="sr-only">（新しいタブで開きます）</span>
+          </a>
         </div>
-        <ul class="fact-row">
-          <li class="fact"><span>ブルーベリー</span><strong>30種類以上</strong></li>
-          <li class="fact"><span>栽培</span><strong>無農薬</strong></li>
-          <li class="fact"><span>場所</span><strong>埼玉県嵐山町</strong></li>
-        </ul>
       </div>
     </section>
 
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap about-grid">
-        <div class="prose">
-          <header class="section-head">
-            <p class="eyebrow">園について</p>
-            <h2 id="about-title">嵐山町の家族農園です</h2>
-          </header>
-          <p>福島ブルーベリーファームは、埼玉県嵐山町でブルーベリーを育てています。農薬は使っていません。</p>
-          <blockquote class="pullquote">
-            <p>30種類以上のブルーベリーから推しを見つけてください</p>
-          </blockquote>
-          <p>秋には栗といちじくもあります。出荷の記録や、嵐山町の地元の情報も発信しています。AIでつくった農園のテーマソング「嵐山の丘の果実」があります。聴ける場所は <span class="mark mark-prep">※準備中</span> です。</p>
-          <p>呼び名として「ブルーミム」と言われることがあります。園の名前は福島ブルーベリーファームです。Instagram の表示名は「埼玉嵐山🫐福島ブルーベリーファーム」、ユーザーネームは @fukushimabbf です。</p>
-        </div>
-        <dl class="spec">
-          <div>
-            <dt>名前</dt>
-            <dd>福島ブルーベリーファーム<span class="spec-note">呼び名: ブルーミム</span></dd>
-          </div>
-          <div>
-            <dt>場所</dt>
-            <dd>埼玉県嵐山町<span class="spec-note">番地 <span class="mark mark-prep">※準備中</span></span></dd>
-          </div>
-          <div>
-            <dt>栽培</dt>
-            <dd>無農薬</dd>
-          </div>
-          <div>
-            <dt>ブルーベリー</dt>
-            <dd>30種類以上<span class="spec-note">品種名 <span class="mark mark-prep">※準備中</span></span></dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="section section-berry" id="varieties" aria-labelledby="varieties-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">品種</p>
-          <h2 id="varieties-title">ブルーベリーの掲載枠</h2>
-          <p class="section-lead">30種類以上あります。下の6枚は掲載枠の見本で、品種の名前ではありません。名前・特徴・写真は、確認できてから載せます。</p>
+    <section class="sec sec-mist" id="seasons" aria-labelledby="seasons-title">
+      <div class="sec-inner">
+        <header class="sh">
+          <span class="en" lang="en">Season</span>
+          <h2 id="seasons-title">いま旬の果実</h2>
         </header>
-        <!-- 品種名が分かったら、この card を複製して文字を差し替える -->
-        <div class="variety-grid">
-          <article class="variety-card">
-            <div class="variety-top">
-              <p class="slot-label">掲載枠</p>
-              <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-berry"/></svg>
-            </div>
-            <p class="variety-no">01</p>
-            <h3>品種名 <span class="mark mark-prep">※準備中</span></h3>
-            <p class="muted">味・粒の大きさ・収穫の目安 <span class="mark mark-prep">※準備中</span></p>
-            <p><span class="mark mark-check">【要確認】</span></p>
+        <p class="lead only-autumn">いまは秋です。栗を出荷しています。いちじくもあります。</p>
+        <p class="lead only-summer">夏はブルーベリーの季節です。2026年の摘み取りは終了しています。</p>
+        <div class="tabs" role="tablist" aria-label="季節の表示">
+          <button type="button" role="tab" id="tab-summer" data-season-tab="summer" aria-selected="false" aria-controls="season-cards">🫐 夏｜ブルーベリー</button>
+          <button type="button" role="tab" id="tab-autumn" class="on" data-season-tab="autumn" aria-selected="true" aria-controls="season-cards">🌰 秋｜栗・いちじく</button>
+        </div>
+        <div class="cards" id="season-cards">
+          <article class="card c-kuri now">
+            <span class="badge-now">出荷中</span>
+            <svg class="fruit-icon" viewBox="-50 -52 100 100" width="56" height="56" aria-hidden="true">
+              <path d="M0 -38 C 22 -30 40 -6 40 14 C 40 30 22 38 0 38 C -22 38 -40 30 -40 14 C -40 -6 -22 -30 0 -38Z" fill="#8A5A34"/>
+              <path d="M-40 14 C -40 30 -22 38 0 38 C 22 38 40 30 40 14 C 26 22 -26 22 -40 14Z" fill="#E9D3A8"/>
+              <path d="M0 -38 L0 -46" stroke="#3A2414" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <h3>栗</h3>
+            <p class="vars">ポロタン（皮がむきやすい）／利平（大きく、甘い）／ひとまる（希少）／岡山甘栗</p>
+            <p class="meta">時期：<span class="ph">【時期：要確認】</span><br>価格：<span class="ph">【価格：要確認】</span></p>
           </article>
-          <article class="variety-card">
-            <div class="variety-top">
-              <p class="slot-label">掲載枠</p>
-              <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-berry"/></svg>
-            </div>
-            <p class="variety-no">02</p>
-            <h3>品種名 <span class="mark mark-prep">※準備中</span></h3>
-            <p class="muted">味・粒の大きさ・収穫の目安 <span class="mark mark-prep">※準備中</span></p>
-            <p><span class="mark mark-check">【要確認】</span></p>
+          <article class="card c-fig">
+            <svg class="fruit-icon" viewBox="-50 -52 100 100" width="56" height="56" aria-hidden="true">
+              <path d="M0 -40 C 8 -40 10 -30 14 -22 C 30 -6 38 10 34 24 C 30 38 14 44 0 44 C -14 44 -30 38 -34 24 C -38 10 -30 -6 -14 -22 C -10 -30 -8 -40 0 -40Z" fill="#3E6B22"/>
+              <path d="M0 -40 L0 -48" stroke="#3A2414" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <h3>いちじく</h3>
+            <p class="vars">バナーネ／コナドリア</p>
+            <p class="meta">時期：<span class="ph">【時期：要確認】</span><br>価格：<span class="ph">【価格：要確認】</span></p>
           </article>
-          <article class="variety-card">
-            <div class="variety-top">
-              <p class="slot-label">掲載枠</p>
-              <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-berry"/></svg>
-            </div>
-            <p class="variety-no">03</p>
-            <h3>品種名 <span class="mark mark-prep">※準備中</span></h3>
-            <p class="muted">味・粒の大きさ・収穫の目安 <span class="mark mark-prep">※準備中</span></p>
-            <p><span class="mark mark-check">【要確認】</span></p>
-          </article>
-          <article class="variety-card">
-            <div class="variety-top">
-              <p class="slot-label">掲載枠</p>
-              <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-berry"/></svg>
-            </div>
-            <p class="variety-no">04</p>
-            <h3>品種名 <span class="mark mark-prep">※準備中</span></h3>
-            <p class="muted">味・粒の大きさ・収穫の目安 <span class="mark mark-prep">※準備中</span></p>
-            <p><span class="mark mark-check">【要確認】</span></p>
-          </article>
-          <article class="variety-card">
-            <div class="variety-top">
-              <p class="slot-label">掲載枠</p>
-              <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-berry"/></svg>
-            </div>
-            <p class="variety-no">05</p>
-            <h3>品種名 <span class="mark mark-prep">※準備中</span></h3>
-            <p class="muted">味・粒の大きさ・収穫の目安 <span class="mark mark-prep">※準備中</span></p>
-            <p><span class="mark mark-check">【要確認】</span></p>
-          </article>
-          <article class="variety-card">
-            <div class="variety-top">
-              <p class="slot-label">掲載枠</p>
-              <svg class="icon" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-berry"/></svg>
-            </div>
-            <p class="variety-no">06</p>
-            <h3>品種名 <span class="mark mark-prep">※準備中</span></h3>
-            <p class="muted">味・粒の大きさ・収穫の目安 <span class="mark mark-prep">※準備中</span></p>
-            <p><span class="mark mark-check">【要確認】</span></p>
+          <article class="card c-bb">
+            <svg class="fruit-icon" viewBox="0 0 48 48" width="56" height="56" aria-hidden="true">
+              <circle cx="18" cy="28" r="12" fill="#4A2D7A"/>
+              <circle cx="32" cy="30" r="9" fill="#2E2F6A"/>
+              <ellipse cx="14" cy="23" rx="3" ry="2" fill="#fff" opacity=".3"/>
+              <path d="M24 12c6-8 14-6 16 0" fill="#5E9B3A"/>
+            </svg>
+            <h3>ブルーベリー</h3>
+            <p class="vars">30種類以上・無農薬</p>
+            <p class="meta">2026年の摘み取りは終了<br>次の時期：<span class="ph">【時期：要確認】</span></p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="calendar" aria-labelledby="calendar-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">季節のたより</p>
-          <h2 id="calendar-title">分かっているのは、秋の果実です</h2>
-          <p class="section-lead">秋は栗といちじくです。ブルーベリー狩りは季節のあいだだけで、2026年のシーズンは終わっています。開催月は未確定です。春・夏・冬の案内は、まだありません。</p>
+    <section class="sec" id="oshi" aria-labelledby="oshi-title">
+      <div class="sec-inner">
+        <header class="sh">
+          <span class="en" lang="en">Find your favorite</span>
+          <h2 id="oshi-title">推しブルーベリーを見つけよう</h2>
         </header>
-        <div class="season-grid">
-          <article class="season season-spring">
-            <h3>春</h3>
-            <p>この季節の案内 <span class="mark mark-prep">※準備中</span></p>
-            <p class="season-when">期間 <span class="mark mark-check">【要確認】</span></p>
-          </article>
-          <article class="season season-summer">
-            <h3>夏</h3>
-            <p>この季節の案内 <span class="mark mark-prep">※準備中</span></p>
-            <p class="muted">ブルーベリー狩りの時期は、この欄にはまだ入れていません。</p>
-            <p class="season-when">期間 <span class="mark mark-check">【要確認】</span></p>
-          </article>
-          <article class="season season-autumn">
-            <p class="season-flag">ブルーベリー狩りのあと</p>
-            <h3>秋 · 栗といちじく</h3>
-            <div class="fruit-group">
-              <h4>栗</h4>
-              <ul class="fruit-list">
-                <li><span class="kind kind-nut">栗</span><strong>ポロタン</strong><span class="fruit-note">皮がむきやすい</span></li>
-                <li><span class="kind kind-nut">栗</span><strong>利平</strong><span class="fruit-note">大きく、甘い</span></li>
-                <li><span class="kind kind-nut">栗</span><strong>ひとまる</strong><span class="fruit-note">希少</span></li>
-                <li><span class="kind kind-nut">栗</span><strong>岡山甘栗</strong></li>
-              </ul>
-            </div>
-            <div class="fruit-group">
-              <h4>いちじく</h4>
-              <ul class="fruit-list">
-                <li><span class="kind kind-fig">いちじく</span><strong>バナーネ</strong></li>
-                <li><span class="kind kind-fig">いちじく</span><strong>コナドリア</strong></li>
-              </ul>
-            </div>
-            <p class="season-when">採れる期間 <span class="mark mark-check">【要確認】</span></p>
-          </article>
-          <article class="season season-winter">
-            <h3>冬</h3>
-            <p>この季節の案内 <span class="mark mark-prep">※準備中</span></p>
-            <p class="season-when">期間 <span class="mark mark-check">【要確認】</span></p>
-          </article>
+        <p class="lead">30種類以上あります。下のカードは掲載枠で、品種の名前ではありません。</p>
+        <div class="chips" role="group" aria-label="探し方の見本（未確定）">
+          <button type="button" class="chip on" aria-pressed="true">甘さ重視</button>
+          <button type="button" class="chip" aria-pressed="false">甘酸っぱい</button>
+          <button type="button" class="chip" aria-pressed="false">大粒</button>
+          <button type="button" class="chip" aria-pressed="false">香り</button>
+          <button type="button" class="chip" aria-pressed="false">ジャム向き</button>
         </div>
-      </div>
-    </section>
-
-    <section class="section band-berry" id="picking" aria-labelledby="picking-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">体験</p>
-          <h2 id="picking-title">ブルーベリー狩り</h2>
-          <p class="section-lead">ブルーベリー狩りは、季節のあいだだけ行っています。料金・時間・予約・駐車場は、まだ掲載していません。</p>
-        </header>
-        <div class="ended-banner">
-          <p class="ended-title">2026年のブルーベリー狩りは終了しました</p>
-          <p>開催していた期間の日付は <span class="mark mark-check">【要確認】</span> です。次の期間も <span class="mark mark-check">【要確認】</span> です。</p>
-        </div>
-        <dl class="detail-grid">
-          <div class="detail-tile">
-            <dt>開催期間</dt>
-            <dd><span class="mark mark-check">【要確認】</span></dd>
-          </div>
-          <div class="detail-tile">
-            <dt>料金</dt>
-            <dd><span class="mark mark-prep">※準備中</span></dd>
-          </div>
-          <div class="detail-tile">
-            <dt>営業時間</dt>
-            <dd><span class="mark mark-prep">※準備中</span></dd>
-          </div>
-          <div class="detail-tile">
-            <dt>予約</dt>
-            <dd><span class="mark mark-prep">※準備中</span></dd>
-          </div>
-          <div class="detail-tile">
-            <dt>駐車場</dt>
-            <dd><span class="mark mark-prep">※準備中</span></dd>
-          </div>
-          <div class="detail-tile">
-            <dt>当日の案内</dt>
-            <dd>持ち物など <span class="mark mark-prep">※準備中</span></dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="section" id="buy" aria-labelledby="buy-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">販売先</p>
-          <h2 id="buy-title">買える場所</h2>
-          <p class="section-lead">農園の果実を、つぎの場所で販売しています。店ごとの住所・時間・品ぞろえは未確認です。これ以外の販売先は、まだ分かりません。</p>
-        </header>
-        <div class="shop-grid">
-          <article class="shop-card">
-            <p class="kicker">販売先</p>
-            <h3>とうふ工房わたなべ</h3>
-            <p>住所 <span class="mark mark-prep">※準備中</span></p>
-            <p>品ぞろえ・時間 <span class="mark mark-check">【要確認】</span></p>
-          </article>
-          <article class="shop-card">
-            <p class="kicker">販売先</p>
-            <h3>JA埼玉中央 嵐山直売所</h3>
-            <p>住所 <span class="mark mark-prep">※準備中</span></p>
-            <p>品ぞろえ・時間 <span class="mark mark-check">【要確認】</span></p>
-          </article>
-        </div>
-        <p class="muted section-note">ほかの販売先 <span class="mark mark-prep">※準備中</span></p>
-      </div>
-    </section>
-
-    <section class="section section-chestnut" id="news" aria-labelledby="news-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">お知らせ</p>
-          <h2 id="news-title">近況</h2>
-          <p class="section-lead">日付はまだ入れていません。分かっていることだけを書いています。</p>
-        </header>
-        <div class="news-list">
-          <article class="news-item news-item-lead">
-            <p class="news-date"><span class="mark mark-check">日付【要確認】</span></p>
-            <h3>2026年のブルーベリー狩りは終了しました</h3>
-            <p>今シーズンのブルーベリー狩りは終わっています。開催していた期間と、次の期間は <span class="mark mark-check">【要確認】</span> です。</p>
-          </article>
-          <article class="news-item">
-            <p class="news-date"><span class="mark mark-check">日付【要確認】</span></p>
-            <h3>秋は栗といちじくです</h3>
-            <p>栗はポロタン（皮がむきやすい）、利平（大きく、甘い）、ひとまる（希少）、岡山甘栗。いちじくはバナーネとコナドリアです。</p>
-          </article>
-          <article class="news-item">
-            <p class="news-date"><span class="mark mark-check">日付【要確認】</span></p>
-            <h3>テーマソング「嵐山の丘の果実」</h3>
-            <p>AIでつくった農園の歌です。聴ける場所は <span class="mark mark-prep">※準備中</span> です。</p>
-          </article>
-          <article class="news-item">
-            <p class="news-date"><span class="mark mark-check">日付【要確認】</span></p>
-            <h3>出荷の記録を投稿しています</h3>
-            <p>出荷の様子を投稿しています。どの投稿かの詳細は <span class="mark mark-check">【要確認】</span> です。</p>
-          </article>
-          <article class="news-item">
-            <p class="news-date"><span class="mark mark-check">日付【要確認】</span></p>
-            <h3>嵐山町の地元情報も発信しています</h3>
-            <p>農園のこととあわせて、嵐山町の情報も出しています。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="access" aria-labelledby="access-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">アクセス</p>
-          <h2 id="access-title">嵐山町まで</h2>
-          <p class="section-lead">町までは分かっています。番地、営業時間、駐車場、電話、地図は未掲載です。</p>
-        </header>
-        <div class="access-layout">
-          <div>
-            <dl class="spec">
-              <div>
-                <dt>所在地</dt>
-                <dd>埼玉県嵐山町<span class="spec-note">番地・建物 <span class="mark mark-prep">※準備中</span></span></dd>
-              </div>
-              <div>
-                <dt>営業時間</dt>
-                <dd><span class="mark mark-prep">※準備中</span></dd>
-              </div>
-              <div>
-                <dt>駐車場</dt>
-                <dd><span class="mark mark-prep">※準備中</span></dd>
-              </div>
-              <div>
-                <dt>電話</dt>
-                <dd><span class="mark mark-prep">※準備中</span></dd>
-              </div>
+        <div class="ocards">
+          <article class="ocard">
+            <span class="no">No.01</span>
+            <h3><span class="ph">【品種名：要確認】</span></h3>
+            <dl>
+              <dt>甘さ</dt>
+              <dd><span class="meter" aria-hidden="true"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></span><span class="sr-only">ダミー</span></dd>
+              <dt>酸味</dt>
+              <dd><span class="meter" aria-hidden="true"><i class="f"></i><i class="f"></i><i></i><i></i><i></i></span><span class="sr-only">ダミー</span></dd>
+              <dt>粒</dt>
+              <dd><span class="grain">未定</span></dd>
             </dl>
-            <p class="station-note">最寄り駅の目安は、東武東上線 武蔵嵐山駅です。<span class="mark mark-check">【要確認】</span><br>駅からの距離・行き方は <span class="mark mark-prep">※準備中</span> です。</p>
-          </div>
-          <div>
-            <div class="map-placeholder">
-              <svg class="map-sketch" viewBox="0 0 320 220" aria-hidden="true">
-                <path d="M0 150c40-20 70-8 110-24 46-18 70 8 120-10 28-10 58 4 90 8v96H0Z" fill="var(--color-leaf-mid)" opacity=".55"/>
-                <path d="M0 180c50-16 90 4 140-8 40-10 70 8 110 0 24-4 46 2 70 6v42H0Z" fill="var(--color-leaf)" opacity=".35"/>
-                <circle cx="168" cy="108" r="7" fill="var(--color-chestnut)"/>
-                <path d="M168 96c10 0 16 8 16 16 0 12-16 28-16 28s-16-16-16-28c0-8 6-16 16-16Z" fill="var(--color-blueberry)"/>
-              </svg>
-              <div class="map-stamp">
-                <p>地図</p>
-                <p><span class="mark mark-prep">※準備中</span></p>
-              </div>
+            <a class="more" href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer">この子が推し！<span class="sr-only">（LINEが開きます）</span></a>
+          </article>
+          <article class="ocard">
+            <span class="no">No.02</span>
+            <h3><span class="ph">【品種名：要確認】</span></h3>
+            <dl>
+              <dt>甘さ</dt>
+              <dd><span class="meter" aria-hidden="true"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i></span><span class="sr-only">ダミー</span></dd>
+              <dt>酸味</dt>
+              <dd><span class="meter" aria-hidden="true"><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i></span><span class="sr-only">ダミー</span></dd>
+              <dt>粒</dt>
+              <dd><span class="grain">未定</span></dd>
+            </dl>
+            <a class="more" href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer">この子が推し！<span class="sr-only">（LINEが開きます）</span></a>
+          </article>
+          <article class="ocard">
+            <span class="no">No.03</span>
+            <h3><span class="ph">【品種名：要確認】</span></h3>
+            <dl>
+              <dt>甘さ</dt>
+              <dd><span class="meter" aria-hidden="true"><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i></span><span class="sr-only">ダミー</span></dd>
+              <dt>酸味</dt>
+              <dd><span class="meter" aria-hidden="true"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i></span><span class="sr-only">ダミー</span></dd>
+              <dt>粒</dt>
+              <dd><span class="grain">未定</span></dd>
+            </dl>
+            <a class="more" href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer">この子が推し！<span class="sr-only">（LINEが開きます）</span></a>
+          </article>
+        </div>
+        <p class="note">品種名と、甘さ・酸味・粒の印はデザイン用のダミーです。実在の値ではありません。</p>
+      </div>
+    </section>
+
+    <section class="sec sec-mist" id="calendar" aria-labelledby="calendar-title">
+      <div class="sec-inner">
+        <header class="sh">
+          <span class="en" lang="en">Fruit Calendar</span>
+          <h2 id="calendar-title">季節の果実カレンダー</h2>
+        </header>
+        <p class="lead">いまは<b>10月</b>。栗を出荷しています。色のバーは、一般的な月の並びの見本です。</p>
+        <div class="cal-scroll">
+          <table class="calendar">
+            <caption class="sr-only">果実ごとの月の見本。実際の時期は未確認です。10月をいまとして示しています。</caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="sr-only">果実</span></th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+                <th scope="col">8</th>
+                <th scope="col">9</th>
+                <th scope="col" class="cur">10</th>
+                <th scope="col">11</th>
+                <th scope="col">12</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">ブルーベリー</th>
+                <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
+                <td class="cell bb"></td><td class="cell bb"></td><td class="cell bb"></td>
+                <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
+              </tr>
+              <tr>
+                <th scope="row">いちじく</th>
+                <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
+                <td class="cell fig"></td><td class="cell fig"></td><td class="cell fig"></td>
+                <td class="cell"></td><td class="cell"></td>
+              </tr>
+              <tr>
+                <th scope="row">栗</th>
+                <td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td>
+                <td class="cell kuri"></td><td class="cell kuri"></td>
+                <td class="cell"></td><td class="cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="cal-now">▲ いまここ</p>
+        <p class="note">バーは一般的な目安です。実際の時期は <span class="ph">【各果実の時期：要確認】</span></p>
+      </div>
+    </section>
+
+    <section class="sec" id="notes" aria-labelledby="notes-title">
+      <div class="sec-inner">
+        <header class="sh">
+          <span class="en" lang="en">Farm Notes</span>
+          <h2 id="notes-title">農園のおたより</h2>
+        </header>
+        <div class="hls">
+          <article class="hcard song" id="song">
+            <div class="disc" aria-hidden="true">♪</div>
+            <div>
+              <h3>テーマソング</h3>
+              <p>「嵐山の丘の果実」<br>AIでつくった農園のうたです。</p>
+              <p class="meta">聴ける場所 <span class="ph">【要確認】</span></p>
             </div>
-            <p class="map-note">この絵は地図ではありません。正確な場所は未掲載です。</p>
-          </div>
+          </article>
+          <article class="hcard" id="log">
+            <h3>出荷ログ</h3>
+            <div class="years" role="group" aria-label="年の見本">
+              <button type="button" class="on" aria-pressed="true">2026</button>
+              <button type="button" aria-pressed="false">2025</button>
+              <button type="button" aria-pressed="false">2024</button>
+            </div>
+            <div class="ph-blocks" aria-hidden="true">
+              <span>写真イメージ</span>
+              <span>写真イメージ</span>
+              <span>写真イメージ</span>
+            </div>
+            <p>出荷の記録を投稿しています。掲載する写真は <span class="ph">【要確認】</span></p>
+          </article>
+          <article class="hcard">
+            <h3>ブルーベリーの食べ方</h3>
+            <p>おうちでの楽しみ方を、ここに載せます。</p>
+            <p>内容 <span class="ph">【要確認】</span></p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <header class="section-head">
-          <p class="eyebrow">連絡</p>
-          <h2 id="contact-title">LINEとInstagram</h2>
-          <p class="section-lead">問い合わせは、LINEとInstagramへ。電話番号は <span class="mark mark-prep">※準備中</span> です。</p>
+    <section class="sec sec-mist" id="shop" aria-labelledby="shop-title">
+      <div class="sec-inner">
+        <header class="sh">
+          <span class="en" lang="en">Where to buy</span>
+          <h2 id="shop-title">販売場所・お問い合わせ</h2>
         </header>
-        <div class="contact-grid">
-          <a class="contact-link contact-line" href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer">
-            <span>
-              <span class="contact-service" lang="en">LINE</span>
-              <span class="contact-label">友だち追加</span>
-              <span class="contact-meta">lin.ee/GamDarC0</span>
-            </span>
-            <span class="contact-go" aria-hidden="true">↗</span>
+        <ul class="shops">
+          <li>
+            <h3>とうふ工房わたなべ</h3>
+            <p><span class="ph">【住所：要確認】</span><br><span class="ph">【営業時間：要確認】</span></p>
+          </li>
+          <li>
+            <h3>JA埼玉中央 嵐山直売所</h3>
+            <p><span class="ph">【住所：要確認】</span><br><span class="ph">【営業時間：要確認】</span></p>
+          </li>
+        </ul>
+        <div class="farm">
+          <h3>農園について</h3>
+          <p>埼玉県嵐山町の家族経営の農園です。ブルーベリーは無農薬で育てています。出荷の記録や、嵐山町の地元の情報も発信しています。</p>
+          <p>農園住所：<span class="ph">【住所：要確認】</span><br>営業時間：<span class="ph">【営業時間：要確認】</span><br>摘み取り料金：<span class="ph">【料金：要確認】</span><br>駐車場：<span class="ph">【要確認】</span><br>電話：<span class="ph">【要確認】</span><br>最寄り駅の目安：東武東上線 武蔵嵐山駅 <span class="ph">【要確認】</span></p>
+        </div>
+        <div class="cta">
+          <a class="btn line big" href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <path d="M12 3C6.5 3 2 6.6 2 11c0 2.6 1.6 4.9 4 6.3V21l3.6-2.4c.8.2 1.6.3 2.4.3 5.5 0 10-3.6 10-8S17.5 3 12 3Z" fill="none" stroke="#0A3556" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="8" cy="11" r="1.2" fill="#0A3556"/>
+              <circle cx="12" cy="11" r="1.2" fill="#0A3556"/>
+              <circle cx="16" cy="11" r="1.2" fill="#0A3556"/>
+            </svg>
+            LINEで問い合わせる
             <span class="sr-only">（新しいタブで開きます）</span>
           </a>
-          <a class="contact-link contact-ig" href="https://www.instagram.com/fukushimabbf/" target="_blank" rel="noopener noreferrer">
-            <span>
-              <span class="contact-service" lang="en">Instagram</span>
-              <span class="contact-label">@fukushimabbf</span>
-              <span class="contact-meta">埼玉嵐山🫐福島ブルーベリーファーム</span>
-            </span>
-            <span class="contact-go" aria-hidden="true">↗</span>
-            <span class="sr-only">（新しいタブで開きます）</span>
-          </a>
+          <p class="small">LINE公式アカウント lin.ee/GamDarC0</p>
+          <a class="ig" href="https://www.instagram.com/fukushimabbf/" target="_blank" rel="noopener noreferrer"><span lang="en">Instagram</span> @fukushimabbf<span class="sr-only">（新しいタブで開きます）</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p class="footer-name">福島ブルーベリーファーム</p>
-      <p class="footer-place">埼玉県嵐山町 · 呼び名として「ブルーミム」</p>
-      <p class="footer-note">Instagram の表示名は「埼玉嵐山🫐福島ブルーベリーファーム」（@fukushimabbf）です。</p>
-      <ul class="footer-links">
-        <li><a href="#about">園のこと</a></li>
-        <li><a href="#varieties">品種</a></li>
-        <li><a href="#calendar">季節</a></li>
-        <li><a href="#picking">狩り</a></li>
-        <li><a href="#buy">販売先</a></li>
-        <li><a href="#news">お知らせ</a></li>
-        <li><a href="#access">アクセス</a></li>
-        <li><a href="#contact">連絡</a></li>
-        <li><a href="https://lin.ee/GamDarC0" target="_blank" rel="noopener noreferrer"><span lang="en">LINE</span><span class="sr-only">（新しいタブで開きます）</span></a></li>
-        <li><a href="https://www.instagram.com/fukushimabbf/" target="_blank" rel="noopener noreferrer"><span lang="en">Instagram</span><span class="sr-only">（新しいタブで開きます）</span></a></li>
-      </ul>
-      <div class="legend">
-        <p>このページはプロトタイプです。配色と書体は仮のものです。</p>
-        <p><span class="mark mark-prep">※準備中</span> は未掲載。<span class="mark mark-check">【要確認】</span> は未確定。どちらも、推測の値では埋めていません。</p>
-        <p class="footer-copy">© 2026 福島ブルーベリーファーム</p>
-      </div>
-    </div>
+  <footer class="ftr">
+    <img class="fbadge" src="assets/logo.svg" alt="" width="72" height="72">
+    <p class="fname"><a href="https://www.instagram.com/fukushimabbf/" target="_blank" rel="noopener noreferrer">埼玉嵐山🫐福島ブルーベリーファーム<span class="sr-only">（Instagram、新しいタブで開きます）</span></a></p>
+    <p class="nick">愛称案：ブルーミム（未確定）</p>
+    <p class="copy">© 2026 福島ブルーベリーファーム</p>
   </footer>
-
-  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
-    <symbol id="i-berry" viewBox="0 0 48 48">
-      <circle cx="24" cy="28" r="12" fill="var(--color-blueberry)"/>
-      <circle cx="19" cy="23" r="2.2" fill="#fff" opacity=".5"/>
-      <path d="M24 14c1.2 2.4 2.4 3.6 2.4 3.6" fill="none" stroke="var(--color-leaf)" stroke-width="2" stroke-linecap="round"/>
-      <ellipse cx="30" cy="13" rx="5" ry="2.4" transform="rotate(-30 30 13)" fill="var(--color-leaf)"/>
-    </symbol>
-  </svg>
   <script src="js/main.js"></script>
 </body>
 </html>
